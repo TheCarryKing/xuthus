@@ -1,0 +1,7 @@
+server:
+  port: 8802
+spring:
+  rabbitmq: #rabbitmqœ‡πÿ≈‰÷√
+    host: localhost
+    username: guest
+    password: guest

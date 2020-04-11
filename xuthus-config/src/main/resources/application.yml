@@ -1,0 +1,18 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: xuthus-config
+  profiles:
+    active: native #使用本地配置，要使用git存储改为git即可
+  cloud:
+    config:
+      server:
+        native: #本地仓库存储
+          search-locations: classpath:/config/{application}
+        git: #Git仓库存储
+          uri: https://github.com/TheCarryKing/xuthus.git
+          username: 826672291@qq.com
+          password: lmtzxujia94201bz
+          clone-on-start: true
+          search-paths: '{application}'
